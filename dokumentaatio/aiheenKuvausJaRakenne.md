@@ -1,4 +1,4 @@
-# Aiheenmäärittely
+﻿# Aiheenmäärittely
 
 **Aihe:** Projektin aiheena on tehdä versio Othello nimisestä kahdestaan pelattavasta lautapelistä. 
 
@@ -17,3 +17,7 @@ Peli päättyy, kun kaikkissa ruuduissa on nappula, tai nappuloita ei voida enä
 * Pelin asetukset
   * Voi valita näkyvätkö mahdolliset siirrot vai ei
 * Pelin pelaaminen
+
+
+
+![Luokkakaavio](/dokumentaatio/Luokkakaavio.png "Luokkakaavio")
