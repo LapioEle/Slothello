@@ -18,6 +18,6 @@ Peli päättyy, kun kaikkissa ruuduissa on nappula, tai nappuloita ei voida enä
   * Voi valita näkyvätkö mahdolliset siirrot vai ei
 * Pelin pelaaminen
 
-# Luokkakaavio
+## Luokkakaavio
 
 ![Luokkakaavio](/dokumentaatio/Luokkakaavio.png "Luokkakaavio")
