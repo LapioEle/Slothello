@@ -3,3 +3,4 @@ Päivä | Tunnit | Kuvaus
 --------------- | ----- | ------
 19.05.2017 | 1.5h | Aiheen suunnittelua ja repon luonti ja dokumentaation kirjoittaminen
 23.5.2017 | 1h | Suunnittelu, dokumentaation päivitys, readme ja luokkakaavio
+24.5.2017 | 4h | Luotiin metodit luokille Ruutu ja Ruudukko ja niiden metodeille testit, generoitiin pit ja checkstyle

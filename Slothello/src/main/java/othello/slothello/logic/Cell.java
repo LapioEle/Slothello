@@ -1,42 +1,46 @@
 package othello.slothello.logic;
 
-/**
- *
- * @author Eelis
- */
 public class Cell {
-    
+
     //true is empty
     private boolean empty;
     //true is "white", false is "black"
     private boolean colour;
-    
+
     public Cell() {
         empty = true;
     }
-    
-    public boolean setWhite() {
+
+    public void setWhite() {
         if (empty = true) {
             empty = false;
         }
         colour = true;
-        return true;
     }
-    
-    public boolean setBlack() {
+
+    public void setBlack() {
         if (empty = true) {
             empty = false;
         }
         colour = false;
-        return true;
     }
-    
+
     public boolean isEmpty() {
         return empty;
     }
-    
+
     public boolean getColour() {
         return colour;
     }
-    
+
+    public String toString() {
+        if (empty) {
+            return "_";
+        }
+        if (colour) {
+            return "W";
+        } else {
+            return "B";
+        }
+    }
 }
