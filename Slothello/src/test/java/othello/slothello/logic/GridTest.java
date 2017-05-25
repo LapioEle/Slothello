@@ -106,4 +106,11 @@ public class GridTest {
         grid.setCellInCoordinate(3, 3, true);
         assertEquals(grid.getCellInCoordinate(3, 3).toString(), "W");
     }
+    
+    @Test
+    public void isCellInCoordinateEmptyOrSameColourDetectsCorrectly() {
+        assertEquals(grid.isCellInCoordinateEmptyOrSameColour(0, 0, true), true);
+        assertEquals(grid.isCellInCoordinateEmptyOrSameColour(1, 1, true), true);
+        assertEquals(grid.isCellInCoordinateEmptyOrSameColour(1, 2, true), false);
+    }
 }

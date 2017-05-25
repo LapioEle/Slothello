@@ -58,15 +58,22 @@ public class Grid {
         return grid;
     }
 
-    public Cell getCellInCoordinate(int a, int b) {
-        return cells[a][b];
+    public Cell getCellInCoordinate(int x, int y) {
+        return cells[x][y];
     }
 
-    public void setCellInCoordinate(int a, int b, boolean c) {
-        if (c) {
-            cells[a][b].setWhite();
+    public void setCellInCoordinate(int x, int y, boolean a) {
+        if (a) {
+            cells[x][y].setWhite();
         } else {
-            cells[a][b].setBlack();
+            cells[x][y].setBlack();
         }
+    }
+    
+    public boolean isCellInCoordinateEmptyOrSameColour(int x, int y, boolean a) {
+        Cell cell = cells[x][y];
+        if (cell.isEmpty()) {
+            return true;
+        } else return cell.getColour() == a;
     }
 }
