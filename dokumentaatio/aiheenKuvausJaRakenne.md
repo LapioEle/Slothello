@@ -17,6 +17,10 @@ Peli päättyy, kun kaikkissa ruuduissa on nappula, tai nappuloita ei voida enä
 * Pelin asetukset
   * Voi valita näkyvätkö mahdolliset siirrot vai ei
 * Pelin pelaaminen
+  * Pelaaja laittaa nappulan johonkin mahdollisista siirroista
+  * Vuoro siirtyy toiselle pelaajalle jos hänellä on mahdollisia siirtoja
+  * Peli jatkuu näin kunnes mahdollisia siirtoja ei ole
+  * Voittaja on se, jolla on enemmän nappuloita lopussa
 
 ## Luokkakaavio
 
