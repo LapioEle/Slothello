@@ -1,18 +1,17 @@
 package othello.slothello.logic;
 
 public class Othello {
-    
+
     private Grid grid;
-    
+
     public Othello() {
-        
+
     }
-    
+
     private void setGameGrid(int size) {
         this.grid = new Grid(size);
     }
-    
-    
+
     //to do
 //    private boolean isMoveLegal(int x, int y, boolean a) {
 //        Cell cell = grid.getCellInCoordinate(x, y);
@@ -30,7 +29,6 @@ public class Othello {
 //        x = x - 2;
 //        
 //    }
-    
     private boolean isCellToLeftSameColourOrEmpty(int x, int y, boolean a) {
         if (x == 0) {
             return false;
@@ -38,5 +36,5 @@ public class Othello {
         x--;
         return grid.isCellInCoordinateEmptyOrSameColour(x, y, a);
     }
-    
+
 }

@@ -69,11 +69,13 @@ public class Grid {
             cells[x][y].setBlack();
         }
     }
-    
+
     public boolean isCellInCoordinateEmptyOrSameColour(int x, int y, boolean a) {
         Cell cell = cells[x][y];
         if (cell.isEmpty()) {
             return true;
-        } else return cell.getColour() == a;
+        } else {
+            return cell.getColour() == a;
+        }
     }
 }
