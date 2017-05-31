@@ -78,4 +78,8 @@ public class Grid {
             return cell.getColour() == a;
         }
     }
+    
+    public int getGridSizeMinusOne() {
+        return side - 1;
+    }
 }
