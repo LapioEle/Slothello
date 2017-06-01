@@ -79,6 +79,15 @@ public class Grid {
         }
     }
     
+    public boolean isCellInCoordinateSameColour(int x, int y, boolean a) {
+        Cell cell = cells[x][y];
+        if (cell.isEmpty()) {
+            return false;
+        } else {
+            return cell.getColour()== a;
+        }
+    }
+    
     public int getGridSizeMinusOne() {
         return side - 1;
     }
