@@ -10,6 +10,6 @@ ja k채채nt채v채t v채liin j채채neet nappulat. Peli loppuu kun ruudukko on t채ynn�
 
 [tuntikirjanpito](dokumentaatio/tuntikirjanpito.md)
 
-[pit-raportti](https://htmlpreview.github.io/?https://github.com/kayttaja/javalabra/blob/master/documentation/pit-reports/index.html)
+[pit-raportti](https://htmlpreview.github.io/?https://github.com/LapioEle/Slothello/blob/master/dokumentaatio/pit/index.html)
 
 [checkstyle-raportti](https://htmlpreview.github.io/?https://github.com/LapioEle/Slothello/blob/master/dokumentaatio/checkstyle/checkstyle.html)
