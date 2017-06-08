@@ -1,14 +1,21 @@
 package othello.slothello.logic;
 
+/**
+ * Luokka on ruudukko, jossa pystyy vaihtamaan tietyssä koordinaatissa olevien
+ * ruutujen tietojen muuttamista ja tarkistamista .
+ */
 public class Grid {
 
     private Cell[][] cells;
     private int side;
 
+    /**
+     * Metodi luo uuden ruudukon, johon on laitettu 2 mustaa ja 2 valkoista
+     * nappulaa keskelle ruudukkoa aloitus asemiin.
+     *
+     * @param side ruudukon koko. Eri kokoisia testausta varten. Aina 8 pelissä
+     */
     public Grid(int side) {
-        /*Defining different size grids mostly for testing purposes, game will be
-        in 8x8 grid. For testing purposes grid still has to be square with even
-        sides and it has to be at least 4x4*/
 
         if (side < 4) {
             side = 4;
@@ -34,6 +41,11 @@ public class Grid {
         setUpCenter();
     }
 
+    /**
+     * Metodi asettaa 4 nappulaa keskelle lautaa. Valkoiset menevät vasemmasta
+     * yläkulmasta alaoikealle menevälle lävistäjälle ja mustat toiselle
+     * lävistäjälle.
+     */
     public void setUpCenter() {
         int x = getBottomRightCenterCell();
         int y = x;
@@ -59,10 +71,26 @@ public class Grid {
         return grid;
     }
 
+    /**
+     * Metodi palauttaa annettussa koordinaatissa olevan ruudun.
+     *
+     * @param x leveyskoordinaatti
+     * @param y korkeuskoordinaatti
+     *
+     * @return koordinaatissa ollut ruutu
+     */
     public Cell getCellInCoordinate(int x, int y) {
         return cells[x][y];
     }
 
+    /**
+     * Metodi asettaa annetussa koordinaatissa olevan ruudun värin haluttuun.
+     *
+     * @param x leveyskoordinaatti
+     * @param y korkeuskoordinaatti
+     * @param a asetettava väri. True valkoinen, false musta
+     *
+     */
     public void setCellInCoordinate(int x, int y, boolean a) {
         if (a) {
             cells[x][y].setWhite();

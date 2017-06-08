@@ -1,5 +1,9 @@
 package othello.slothello.logic;
 
+/**
+ * Luokka mahdollistaa ruudun värin asettamisen ja lisäksi sen aseman
+ * tarkistamisen.
+ */
 public class Cell {
 
     //true is empty
@@ -33,6 +37,7 @@ public class Cell {
         return colour;
     }
 
+    @Override
     public String toString() {
         if (empty) {
             return "_";

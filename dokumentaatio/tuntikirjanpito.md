@@ -9,3 +9,4 @@ Päivä | Tunnit | Kuvaus
 1.6.2017 | 1h | Korjattiin sallittujen siirtojen tunnistus, uusi luokkakaavio, checkstyle, pit ja read.me päivitys
 6.6.2017 | 3h | Jaettiin suunnat omiin luokkiin, siirtojen tekemisen aloittaminen
 7.6.2017 | 7h | Suuntien tarkempaa korjausta ja niille testien tekeminen. Laillisen siirron tekeminen valmiiksi
+8.6.2017 | 1h | Javadoc joka luokalle ja joillekkin metodeille

@@ -3,6 +3,10 @@ package othello.slothello.logic.movechecker;
 import othello.slothello.logic.Cell;
 import othello.slothello.logic.Grid;
 
+/**
+ * Luokka, joka tarkista onko siirto laillinen valitussa ruudussa ja vaihtaa
+ * ruutujen värejä sääntöjen mukaan, kun laillinen siirto tehdään.
+ */
 public class MoveChecker {
 
     private Grid grid;

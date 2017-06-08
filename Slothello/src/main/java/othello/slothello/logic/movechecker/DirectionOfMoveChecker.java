@@ -2,6 +2,10 @@ package othello.slothello.logic.movechecker;
 
 import othello.slothello.logic.Grid;
 
+/**
+ * Rajapinta, joka määrittelee siirron tekemiseen liittyvien apuluokkien
+ * tarvittavat metodit.
+ */
 public interface DirectionOfMoveChecker {
 
     void setGrid(Grid grid);

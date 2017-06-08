@@ -3,6 +3,10 @@ package othello.slothello.logic;
 import java.util.Scanner;
 import othello.slothello.logic.movechecker.MoveChecker;
 
+/**
+ * Luokka sisältää pelin aloittamiseen, sen kulkuun, pelaamiseen ja
+ * lopettamiseen liittyviä metodeja.
+ */
 public class Othello {
 
     Scanner reader = new Scanner(System.in);

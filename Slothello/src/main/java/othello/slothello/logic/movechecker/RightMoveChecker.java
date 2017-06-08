@@ -2,6 +2,10 @@ package othello.slothello.logic.movechecker;
 
 import othello.slothello.logic.Grid;
 
+/**
+ * Luokka, joka tarkistaa oikealle valitusta ruudusta onko siirto laillinen ja
+ * kääntää vaihtaa tarvittavien ruutujen värejä.
+ */
 public class RightMoveChecker implements DirectionOfMoveChecker {
 
     private Grid grid;
