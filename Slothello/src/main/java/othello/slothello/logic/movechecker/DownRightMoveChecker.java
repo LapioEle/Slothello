@@ -1,10 +1,12 @@
-package othello.slothello.logic;
+package othello.slothello.logic.movechecker;
 
-public class UpRightMoveChecker implements DirectionOfMoveChecker {
+import othello.slothello.logic.Grid;
+
+public class DownRightMoveChecker implements DirectionOfMoveChecker {
 
     private Grid grid;
 
-    public UpRightMoveChecker(Grid grid) {
+    DownRightMoveChecker(Grid grid) {
         this.grid = grid;
     }
 
@@ -15,11 +17,11 @@ public class UpRightMoveChecker implements DirectionOfMoveChecker {
 
     @Override
     public boolean isCellNextToSameEmptyOrOutOfBounds(int x, int y, boolean a) {
-        if (x == grid.getGridSizeMinusOne() || y == 0) {
+        if (x == grid.getGridSizeMinusOne() || y == grid.getGridSizeMinusOne()) {
             return true;
         }
         x++;
-        y--;
+        y++;
         return grid.isCellInCoordinateEmptyOrSameColour(x, y, a);
     }
 
@@ -29,12 +31,12 @@ public class UpRightMoveChecker implements DirectionOfMoveChecker {
             return null;
         }
         x = x + 2;
-        y = y - 2;
-        while (x <= grid.getGridSizeMinusOne() || y >= 0) {
+        y = y + 2;
+        while (x <= grid.getGridSizeMinusOne() && y <= grid.getGridSizeMinusOne()) {
             if (grid.isCellInCoordinateSameColour(x, y, a)) {
                 return new int[]{x, y};
             } else {
-                y--;
+                y++;
                 x++;
             }
         }
@@ -50,9 +52,9 @@ public class UpRightMoveChecker implements DirectionOfMoveChecker {
         int x2 = i[0];
         int y2 = i[1];
         grid.setCellInCoordinate(x, y, a);
-        while (x < x2 || y > y2) {
+        while (x < x2 || y < y2) {
             x++;
-            y--;
+            y++;
             grid.setCellInCoordinate(x, y, a);
         }
         return true;

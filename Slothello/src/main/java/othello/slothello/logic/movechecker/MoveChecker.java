@@ -1,9 +1,12 @@
-package othello.slothello.logic;
+package othello.slothello.logic.movechecker;
+
+import othello.slothello.logic.Cell;
+import othello.slothello.logic.Grid;
 
 public class MoveChecker {
 
     private Grid grid;
-    
+
     public MoveChecker(Grid grid) {
         this.grid = grid;
     }
@@ -11,7 +14,7 @@ public class MoveChecker {
     public void setGrid(Grid grid) {
         this.grid = grid;
     }
-      
+
     public boolean isMoveLegal(int x, int y, boolean a) {
         Cell cell = grid.getCellInCoordinate(x, y);
 
@@ -43,7 +46,7 @@ public class MoveChecker {
         }
         return false;
     }
-    
+
     public void makeMove(int x, int y, boolean a) {
         new LeftMoveChecker(grid).turnTilesToDirectionForLegalMove(x, y, a);
         new UpLeftMoveChecker(grid).turnTilesToDirectionForLegalMove(x, y, a);
@@ -53,5 +56,5 @@ public class MoveChecker {
         new DownRightMoveChecker(grid).turnTilesToDirectionForLegalMove(x, y, a);
         new DownMoveChecker(grid).turnTilesToDirectionForLegalMove(x, y, a);
         new DownLeftMoveChecker(grid).turnTilesToDirectionForLegalMove(x, y, a);
-    }   
+    }
 }

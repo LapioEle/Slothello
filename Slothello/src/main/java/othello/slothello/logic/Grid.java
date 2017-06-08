@@ -47,6 +47,7 @@ public class Grid {
         System.out.println(this.toString());
     }
 
+    @Override
     public String toString() {
         String grid = "";
         for (int y = 0; y < cells.length; y++) {

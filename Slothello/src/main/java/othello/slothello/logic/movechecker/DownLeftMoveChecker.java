@@ -1,13 +1,15 @@
-package othello.slothello.logic;
+package othello.slothello.logic.movechecker;
 
-public class DownMoveChecker implements DirectionOfMoveChecker {
+import othello.slothello.logic.Grid;
+
+public class DownLeftMoveChecker implements DirectionOfMoveChecker {
 
     private Grid grid;
-    
-    public DownMoveChecker(Grid grid) {
+
+    DownLeftMoveChecker(Grid grid) {
         this.grid = grid;
     }
-    
+
     @Override
     public void setGrid(Grid grid) {
         this.grid = grid;
@@ -15,9 +17,10 @@ public class DownMoveChecker implements DirectionOfMoveChecker {
 
     @Override
     public boolean isCellNextToSameEmptyOrOutOfBounds(int x, int y, boolean a) {
-        if (y == grid.getGridSizeMinusOne()) {
+        if (x == 0 || y == grid.getGridSizeMinusOne()) {
             return true;
         }
+        x--;
         y++;
         return grid.isCellInCoordinateEmptyOrSameColour(x, y, a);
     }
@@ -27,12 +30,14 @@ public class DownMoveChecker implements DirectionOfMoveChecker {
         if (isCellNextToSameEmptyOrOutOfBounds(x, y, a)) {
             return null;
         }
+        x = x - 2;
         y = y + 2;
-        while (y <= grid.getGridSizeMinusOne()) {
+        while (x >= 0 || y <= grid.getGridSizeMinusOne()) {
             if (grid.isCellInCoordinateSameColour(x, y, a)) {
-                return new int [] {x, y};
+                return new int[]{x, y};
             } else {
                 y++;
+                x--;
             }
         }
         return null;
@@ -43,10 +48,12 @@ public class DownMoveChecker implements DirectionOfMoveChecker {
         if (goDirectionUntilFoundSameColourOrEmpty(x, y, a) == null) {
             return false;
         }
-        int [] i = goDirectionUntilFoundSameColourOrEmpty(x, y, a);
+        int[] i = goDirectionUntilFoundSameColourOrEmpty(x, y, a);
+        int x2 = i[0];
         int y2 = i[1];
         grid.setCellInCoordinate(x, y, a);
-        while (y < y2) {
+        while (x > x2 || y < y2) {
+            x--;
             y++;
             grid.setCellInCoordinate(x, y, a);
         }

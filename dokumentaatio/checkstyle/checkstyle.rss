@@ -25,8 +25,8 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2017</copyright>
     <item>
-      <title>File: 5,
-             Errors: 1,
+      <title>File: 15,
+             Errors: 0,
              Warnings: 0,
              Infos: 0
       </title>
@@ -46,6 +46,34 @@ under the License.
           <tbody>
                           <tr>
                 <td>
+                  <a href="${project.url}/checkstyle.html#othello.slothello.logic.movechecker.DirectionOfMoveChecker.java">othello/slothello/logic/movechecker/DirectionOfMoveChecker.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#othello.slothello.logic.movechecker.MoveChecker.java">othello/slothello/logic/movechecker/MoveChecker.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="${project.url}/checkstyle.html#othello.slothello.logic.Othello.java">othello/slothello/logic/Othello.java</a>
                 </td>
                 <td>
@@ -60,7 +88,119 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="${project.url}/checkstyle.html#othello.slothello.logic.movechecker.DownMoveChecker.java">othello/slothello/logic/movechecker/DownMoveChecker.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#othello.slothello.logic.IntPair.java">othello/slothello/logic/IntPair.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#othello.slothello.logic.movechecker.DownLeftMoveChecker.java">othello/slothello/logic/movechecker/DownLeftMoveChecker.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#othello.slothello.logic.movechecker.UpLeftMoveChecker.java">othello/slothello/logic/movechecker/UpLeftMoveChecker.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#othello.slothello.logic.movechecker.UpMoveChecker.java">othello/slothello/logic/movechecker/UpMoveChecker.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#othello.slothello.logic.movechecker.RightMoveChecker.java">othello/slothello/logic/movechecker/RightMoveChecker.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#othello.slothello.logic.movechecker.UpRightMoveChecker.java">othello/slothello/logic/movechecker/UpRightMoveChecker.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="${project.url}/checkstyle.html#othello.slothello.logic.Cell.java">othello/slothello/logic/Cell.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#othello.slothello.logic.movechecker.LeftMoveChecker.java">othello/slothello/logic/movechecker/LeftMoveChecker.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +242,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#othello.slothello.logic.LegalMoveChecker.java">othello/slothello/logic/LegalMoveChecker.java</a>
+                  <a href="${project.url}/checkstyle.html#othello.slothello.logic.movechecker.DownRightMoveChecker.java">othello/slothello/logic/movechecker/DownRightMoveChecker.java</a>
                 </td>
                 <td>
                   0
@@ -111,7 +251,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
+                  0
                 </td>
               </tr>
                       </tbody>
