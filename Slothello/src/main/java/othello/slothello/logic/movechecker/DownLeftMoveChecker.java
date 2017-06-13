@@ -36,7 +36,7 @@ public class DownLeftMoveChecker implements DirectionOfMoveChecker {
         }
         x = x - 2;
         y = y + 2;
-        while (x >= 0 || y <= grid.getGridSizeMinusOne()) {
+        while (x >= 0 && y <= grid.getGridSizeMinusOne()) {
             if (grid.isCellInCoordinateSameColour(x, y, a)) {
                 return new int[]{x, y};
             } else {
